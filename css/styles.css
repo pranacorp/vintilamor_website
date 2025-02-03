@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/img/BGnuvens.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin-top: 5%;
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o container horizontalmente */
+    margin: 0 auto; /* Adiciona margem automática para centralizar */
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 50px; /* Adiciona padding-top de 50px */
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    max-height: 233px;
+}
+
+#section2 img:hover {
+    transform: scale(1.1);
+}
+
+#section3 p {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.line {
+    width: 50px;
+    height: 2px;
+    background-color: #333;
+    margin: 10px auto;
+}
+
+#section3 a {
+    text-decoration: none;
+    color: #333;
+}
+
+#section3 a:hover {
+    text-decoration: underline;
+}
+
+#section4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#section4 img {
+    max-width: 50px;
+    height: auto;
+}
+
+#section4 a {
+    color: #333;
+    text-decoration: none;
+}
+
+#section4 a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para telas menores (como smartphones e tablets) */
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: 10%;
+    }
+
+    .section img {
+        max-height: 150px;
+    }
+
+    #section4 img {
+        max-width: 25px;
+    }
+}
